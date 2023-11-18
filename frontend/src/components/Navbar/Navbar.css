@@ -1,0 +1,75 @@
+.icon-hover:hover {
+  transform: scale(1.1);
+  transition: transform 0.1s ease, box-shadow 0.3s ease;
+}
+
+.sun {
+  color: rgb(245 158 11);
+}
+
+.moon {
+  color: rgb(30 64 175);
+}
+
+.icon-size {
+  width: 1.4rem;
+  height: 1.4rem;
+}
+@media (min-width: 768px) {
+  .icon-size {
+    width: 1.1rem;
+    height: 1.1rem;
+  }
+}
+.full-screen-menu {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 100;
+  display: flex;
+  flex-direction: column;
+  background-color: var(--background-color-light);
+  color: var(--text-color-light);
+}
+
+.full-screen-menu.open {
+  transform: translateX(0);
+}
+
+.full-screen-menu.dark {
+  background-color: var(--background-color-dark);
+  color: var(--text-color-dark);
+}
+
+.full-screen-menu.dark.open > div > a {
+  background-color: var(--background-color-dark2);
+  color: var(--text-color-dark);
+}
+
+.burger-icon {
+  z-index: 102;
+  transition: transform 0.3s ease-in-out;
+}
+
+.burger-button {
+  background-color: rgb(231 229 228);
+  color: var(--text-color-light);
+  margin-right: 3rem;
+  margin-left: 3rem;
+  padding: 1rem;
+}
+
+/* Rotate burger icon when menu is open */
+.burger-icon.open {
+  transform: rotate(90deg);
+}
+
+.header-fixed {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 101;
+}

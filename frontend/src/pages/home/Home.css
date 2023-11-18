@@ -1,0 +1,65 @@
+.cursor {
+  display: inline;
+  animation: blink 0.7s step-end infinite;
+}
+
+@keyframes blink {
+  50% {
+    visibility: hidden;
+  }
+}
+
+.project-button {
+  background-color: var(--button-color-light);
+  border: none;
+  color: var(--text-color-dark);
+  cursor: pointer;
+  text-decoration: none;
+  transition: background-color 0.3s;
+  max-width: 8rem;
+  min-width: 8rem;
+  /* width: 100%; */
+  text-align: center;
+  box-sizing: border-box;
+  font-weight: 500;
+  font-size: small;
+}
+
+.project-button-dark {
+  background-color: var(--button-color-dark);
+  border: none;
+  color: var(--text-color-dark);
+  cursor: pointer;
+  text-decoration: none;
+  transition: background-color 0.3s;
+  text-align: center;
+  box-sizing: border-box;
+  font-weight: 500;
+  font-size: small;
+}
+
+.project-button:hover:not(:disabled):not(.pressed) {
+  background-color: rgb(7, 209, 152, 90);
+}
+
+.description {
+  cursor: default;
+}
+
+.home-button-mobile {
+  background-color: var(--button-color-light);
+  color: var(--text-color-dark);
+  height: 2.4rem;
+  width: 80%;
+}
+
+.home-button-mobile.dark {
+  background-color: var(--button-color-dark);
+}
+
+.main-container {
+  font-weight: 300;
+}
+.main-container.dark {
+  font-weight: 100;
+}
